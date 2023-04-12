@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+li {
+    list-style: none;
+}
+
+.popup {
+    width: 350px;
+}
+
+.popup :where(.picker, .picked-header, .all-colors, .color) {
+    display: flex;
+}
+
+.picker {
+    justify-content: center;
+    align-content: center;
+    padding: 50px 0;
+    background: #A1D1D2;
+}
+
+.picker-color {
+    outline: none;
+    border: none;
+    color: #403E3E;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 25px;
+}
+
+.picked-colors {
+    margin: 15px 0;
+    padding: 0 15px;
+}
+
+.picked-colors.hide {
+    display: none;
+}
+
+.picked-header {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.picked-header__title {
+    font-size: 1.1rem;
+}
+
+.picked-header__clear {
+    font-size: 1.1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.picked-header__clear:hover {
+    color: #f25757;
+}
+
+.all-colors {
+    flex-wrap: wrap;
+}
+
+.color {
+    width: calc(100%/3);
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.color__rect {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
